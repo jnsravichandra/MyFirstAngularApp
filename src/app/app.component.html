@@ -1,0 +1,40 @@
+<div class="site"> 
+    <!--Site Header-->
+    <div class="site-header">
+        <h1 id='siteHeader'>{{title}}</h1>
+
+        <button (click) = "routerApp('home')" routerLink="/home">
+            Home
+        </button>
+        <button (click) = "routerApp('angular-tour-of-heros')" routerLink="/angular-tour-of-heros/dashboard">
+            Angular Tour of Heros
+        </button>
+        <button (click) = "routerApp('password-manager')" routerLink="/home">
+            Password Manager
+        </button>
+        <button (click)= "routerApp('home')" routerLink="/home">
+            Clear
+        </button>    
+    </div>
+
+    <!--Site Body-->
+    <div class="site-body">
+        <div *ngIf = 'routeApp === "angular-tour-of-heros"'>
+            <app-angular-tour-of-heros></app-angular-tour-of-heros>
+        </div>
+        <div *ngIf = 'routeApp === "home"'></div>    
+        
+        <!-- Router Outlet  -->
+        <router-outlet></router-outlet>
+        
+        <div *ngIf = 'routeApp === "angular-tour-of-heros"'>
+            <app-messages></app-messages>
+        </div>
+    </div>
+
+    <!--Site Footer-->
+    <div class="site-footer">
+        
+    </div>
+
+</div>

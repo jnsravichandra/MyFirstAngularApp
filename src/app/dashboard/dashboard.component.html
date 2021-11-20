@@ -1,0 +1,9 @@
+<!-- <app-angular-tour-of-heros></app-angular-tour-of-heros> -->
+
+<h2>Top Heros</h2>
+<div class="heros-menu">
+    <a *ngFor='let hero of heros' routerLink="/angular-tour-of-heros/detail/{{hero.id}}">
+        {{hero.name}}
+    </a>
+</div>
+<app-hero-search></app-hero-search>

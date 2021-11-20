@@ -1,0 +1,22 @@
+.site {
+    background-color : rgb(208, 209, 205);
+    height: 100%;
+}
+
+.site-header {
+    background-color: rgb(77, 66, 224);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#siteHeader {
+    color: seashell;
+}
+.site-header > h1 {
+    margin: 0px 0px 0px 10px ;
+}
+.site-header > button {
+    margin: 10px 0px 10px 10px;
+    width: auto;
+}
