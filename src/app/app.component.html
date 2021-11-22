@@ -1,20 +1,26 @@
 <div class="site"> 
     <!--Site Header-->
     <div class="site-header">
-        <h1 id='siteHeader'>{{title}}</h1>
-
-        <button (click) = "routerApp('home')" routerLink="/home">
-            Home
-        </button>
-        <button (click) = "routerApp('angular-tour-of-heros')" routerLink="/angular-tour-of-heros/dashboard">
-            Angular Tour of Heros
-        </button>
-        <button (click) = "routerApp('password-manager')" routerLink="/home">
-            Password Manager
-        </button>
-        <button (click)= "routerApp('home')" routerLink="/home">
-            Clear
-        </button>    
+        <mat-toolbar>
+            <span>
+                <mat-icon id='ecoMatIcon'>eco</mat-icon>
+                <h1>{{title}}</h1>
+            </span>
+            
+            <div class="header-spacer"></div>
+            <button mat-button (click) = "routerApp('home')" routerLink="/home">
+                Home
+            </button>
+            <button mat-button (click) = "routerApp('angular-tour-of-heros')" routerLink="/angular-tour-of-heros/dashboard">
+                Angular Tour of Heros
+            </button>
+            <button mat-button (click) = "routerApp('password-manager')" routerLink="/home">
+                Password Manager
+            </button>
+            <button mat-button (click)= "routerApp('home')" routerLink="/home">
+                Clear
+            </button>    
+        </mat-toolbar>
     </div>
 
     <!--Site Body-->
