@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-first-angular-project-4de34": {
+      "hosting": {
+        "Minimis": [
+          "my-first-angular-project-4de34"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "my-first-angular-project-4de34"
+  }
+}
