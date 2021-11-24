@@ -4,13 +4,15 @@ import { DashboardComponent } from './tour-of-heros/dashboard/dashboard.componen
 import { HeroDetailComponent } from './tour-of-heros/hero-detail/hero-detail.component';
 import { HerosComponent } from './tour-of-heros/heros/heros.component';
 import { HomeComponent } from './home/home.component';
+import { PasswordManagerHomeComponent } from './password-manager/password-manager-home/password-manager-home.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'angular-tour-of-heros/heros', component: HerosComponent},
   {path: 'angular-tour-of-heros/dashboard', component: DashboardComponent},
-  {path: 'angular-tour-of-heros/detail/:id',component: HeroDetailComponent}
+  {path: 'angular-tour-of-heros/detail/:id',component: HeroDetailComponent},
+  {path: 'password-manager',component: PasswordManagerHomeComponent}
 ];
 
 @NgModule({
