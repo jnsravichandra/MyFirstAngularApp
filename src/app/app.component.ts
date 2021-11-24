@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
       Breakpoints.XLarge
     ]).subscribe( (state: BreakpointState) => {
       if (state.breakpoints[Breakpoints.XSmall]) {
-        //this.screenSize = 'x-small';
+        this.screenSize = 'x-small';
         //console.log( 'Matches XSmall viewport');
       }
       if (state.breakpoints[Breakpoints.Small]) {
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
         //console.log( 'Matches Large viewport');
       }
       if (state.breakpoints[Breakpoints.XLarge]) {
-        //this.screenSize = 'x-large';
+        this.screenSize = 'x-large';
         //console.log( 'Matches XLarge viewport');   
       }
     });

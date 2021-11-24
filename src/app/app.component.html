@@ -6,7 +6,7 @@
                 <mat-icon id='ecoMatIcon'>eco</mat-icon> 
                 <h1>{{title}}</h1>
             </span>
-            <span class="header-buttons" [ngClass] = "{'hide-content': (screenSize === 'small')}">
+            <span class="header-buttons" [ngClass] = "{'hide-content': !((screenSize === 'x-large') || (screenSize === 'large') || (screenSize === 'medium'))}">
                 <button mat-button (click) = "routerApp('home')" routerLink="/home" >
                     Home
                 </button>
@@ -20,7 +20,7 @@
                     Clear
                 </button> 
             </span>
-            <span class='hamburger-menu'  [ngClass] = "{'hide-content': ((screenSize === 'large') || (screenSize === 'medium'))}">
+            <span class='hamburger-menu'  [ngClass] = "{'hide-content': ((screenSize === 'x-large') || (screenSize === 'large') || (screenSize === 'medium'))}">
                 <button mat-button [matMenuTriggerFor]="menu">
                     <mat-icon>menu </mat-icon>
                 </button>
