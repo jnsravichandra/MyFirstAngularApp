@@ -2,24 +2,43 @@
     <!--Site Header-->
     <div class="site-header">
         <mat-toolbar>
-            <span>
-                <mat-icon id='ecoMatIcon'>eco</mat-icon>
+            <span class = 'application-title'>
+                <mat-icon id='ecoMatIcon'>eco</mat-icon> 
                 <h1>{{title}}</h1>
             </span>
-            
-            <div class="header-spacer"></div>
-            <button mat-button (click) = "routerApp('home')" routerLink="/home">
-                Home
-            </button>
-            <button mat-button (click) = "routerApp('angular-tour-of-heros')" routerLink="/angular-tour-of-heros/dashboard">
-                Angular Tour of Heros
-            </button>
-            <button mat-button (click) = "routerApp('password-manager')" routerLink="/home">
-                Password Manager
-            </button>
-            <button mat-button (click)= "routerApp('home')" routerLink="/home">
-                Clear
-            </button>    
+            <span class="header-buttons" [ngClass] = "{'hide-content': (screenSize === 'small')}">
+                <button mat-button (click) = "routerApp('home')" routerLink="/home" >
+                    Home
+                </button>
+                <button mat-button (click) = "routerApp('angular-tour-of-heros')" routerLink="/angular-tour-of-heros/dashboard">
+                    Angular Tour of Heros
+                </button>
+                <button mat-button (click) = "routerApp('password-manager')" routerLink="/home">
+                    Password Manager
+                </button>
+                <button mat-button (click)= "routerApp('home')" routerLink="/home">
+                    Clear
+                </button> 
+            </span>
+            <span class='hamburger-menu'  [ngClass] = "{'hide-content': ((screenSize === 'large') || (screenSize === 'medium'))}">
+                <button mat-button [matMenuTriggerFor]="menu">
+                    <mat-icon>menu </mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click) = "routerApp('home')" routerLink="/home" >
+                        Home
+                    </button>
+                    <button mat-menu-item (click) = "routerApp('angular-tour-of-heros')" routerLink="/angular-tour-of-heros/dashboard">
+                        Angular Tour of Heros
+                    </button>
+                    <button mat-menu-item (click) = "routerApp('password-manager')" routerLink="/home">
+                        Password Manager
+                    </button>
+                    <button mat-menu-item (click)= "routerApp('home')" routerLink="/home">
+                        Clear
+                    </button> 
+                </mat-menu>
+            </span>
         </mat-toolbar>
     </div>
 

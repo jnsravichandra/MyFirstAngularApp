@@ -2,16 +2,30 @@
     background-color : rgb(208, 209, 205);
     height: 100%;
 }
-.site-header > h1 {
-    margin: 0px 0px 0px 10px ;
-}
-.site-header > button {
-    margin: 10px 0px 10px 10px;
-    width: auto;
-}
-.header-spacer {
-    flex: 1 1;
+.application-title {
+    margin-right: 10px;
 }
 #ecoMatIcon {
     float: left;
+    padding-top: 5px;
+}
+.header-buttons {
+    padding: 0;
+    margin-left: auto;
+
+    /*flex box*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.hamburger-menu {
+    margin-left: auto;
+}
+
+.hide-content {
+    display: none;
 }

@@ -5,7 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDividerModule } from '@angular/material/divider';
-
+//import { FlexLayoutModule } from '@angular/flex-layout';
 
 const MaterialComponents = [
   MatButtonModule,
@@ -14,6 +14,7 @@ const MaterialComponents = [
   MatMenuModule,
   MatTabsModule,
   MatDividerModule
+  //FlexLayoutModule
 ];
 
 @NgModule({
